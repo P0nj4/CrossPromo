@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35CEF293DA866318BFCCE4DD /* Pods_CrossPromo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2137F75935A37FC91F543DC3 /* Pods_CrossPromo.framework */; };
 		44837FE61DA2D4300049D00D /* CrossPromo.h in Headers */ = {isa = PBXBuildFile; fileRef = 44837FE51DA2D4300049D00D /* CrossPromo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44837FEE1DA2D4A20049D00D /* CrossPromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44837FED1DA2D4A20049D00D /* CrossPromo.swift */; };
+		44837FF01DA2D56E0049D00D /* dummyData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44837FEF1DA2D56E0049D00D /* dummyData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2137F75935A37FC91F543DC3 /* Pods_CrossPromo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrossPromo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2498D82D0C0EFBF6C5E11BF7 /* Pods-CrossPromo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossPromo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrossPromo/Pods-CrossPromo.release.xcconfig"; sourceTree = "<group>"; };
+		258CB1DDC9C0B36C05E52F71 /* Pods-CrossPromo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossPromo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrossPromo/Pods-CrossPromo.debug.xcconfig"; sourceTree = "<group>"; };
 		44837FE21DA2D4300049D00D /* CrossPromo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CrossPromo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44837FE51DA2D4300049D00D /* CrossPromo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrossPromo.h; sourceTree = "<group>"; };
 		44837FE71DA2D4300049D00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44837FED1DA2D4A20049D00D /* CrossPromo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossPromo.swift; sourceTree = "<group>"; };
+		44837FEF1DA2D56E0049D00D /* dummyData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dummyData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +29,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35CEF293DA866318BFCCE4DD /* Pods_CrossPromo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16DDB646658525B15B26D0F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2137F75935A37FC91F543DC3 /* Pods_CrossPromo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		44837FD81DA2D4300049D00D = {
 			isa = PBXGroup;
 			children = (
 				44837FE41DA2D4300049D00D /* CrossPromo */,
 				44837FE31DA2D4300049D00D /* Products */,
+				D267C570C0E77F6D0F697D0E /* Pods */,
+				16DDB646658525B15B26D0F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +67,19 @@
 			children = (
 				44837FE51DA2D4300049D00D /* CrossPromo.h */,
 				44837FE71DA2D4300049D00D /* Info.plist */,
+				44837FED1DA2D4A20049D00D /* CrossPromo.swift */,
+				44837FEF1DA2D56E0049D00D /* dummyData.plist */,
 			);
 			path = CrossPromo;
+			sourceTree = "<group>";
+		};
+		D267C570C0E77F6D0F697D0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				258CB1DDC9C0B36C05E52F71 /* Pods-CrossPromo.debug.xcconfig */,
+				2498D82D0C0EFBF6C5E11BF7 /* Pods-CrossPromo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44837FEA1DA2D4300049D00D /* Build configuration list for PBXNativeTarget "CrossPromo" */;
 			buildPhases = (
+				7060D9C0C35F78C3E4B5408D /* [CP] Check Pods Manifest.lock */,
 				44837FDD1DA2D4300049D00D /* Sources */,
 				44837FDE1DA2D4300049D00D /* Frameworks */,
 				44837FDF1DA2D4300049D00D /* Headers */,
 				44837FE01DA2D4300049D00D /* Resources */,
+				AB6ACF2B61C8C572EF22B721 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,16 +152,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44837FF01DA2D56E0049D00D /* dummyData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7060D9C0C35F78C3E4B5408D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB6ACF2B61C8C572EF22B721 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrossPromo/Pods-CrossPromo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44837FDD1DA2D4300049D00D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44837FEE1DA2D4A20049D00D /* CrossPromo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +296,9 @@
 		};
 		44837FEB1DA2D4300049D00D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 258CB1DDC9C0B36C05E52F71 /* Pods-CrossPromo.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +309,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.germanpereyra.CrossPromo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		44837FEC1DA2D4300049D00D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2498D82D0C0EFBF6C5E11BF7 /* Pods-CrossPromo.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -256,6 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.germanpereyra.CrossPromo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -278,6 +352,7 @@
 				44837FEC1DA2D4300049D00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
